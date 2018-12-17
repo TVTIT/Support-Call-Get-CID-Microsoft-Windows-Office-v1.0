@@ -907,7 +907,6 @@ namespace WindowsFormsApplication1
                             break;
                     }
                 }
-                }
                 //KMS Server: kms.loto.cc
                 if (radioButton10.Checked)
                 {
@@ -1241,349 +1240,351 @@ namespace WindowsFormsApplication1
                             textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
                             break;
                     }
+                }
 
-                    //KMS Server: Custom
-                    if (radioButton11.Checked)
+                //KMS Server: Custom
+                if (radioButton11.Checked)
+                {
+                    if (textBox13.Text.Length == 0)
                     {
-                            if (textBox13.Text.Length == 0)
-                            {
-                                MessageBox.Show("Please type the KMS Server or chosse other chose");
-                                return;
-                            }
-                            else
-                            {
-                                KMSSV = textBox13.Text;
-                            }
-                        switch (comboBox1.SelectedIndex)
-                        {
-                            //Windows 10 Home
-                            case 0:
-                                textBox14.Text = "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Home N
-                            case 1:
-                                textBox14.Text = "3KHY7-WNT83-DGQKR-F7HPR-844BM";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Home SL
-                            case 2:
-                                textBox14.Text = "7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Home China
-                            case 3:
-                                textBox14.Text = "PVMJN-6DFY6-9CCP6-7BKTT-D3WVR";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Pro
-                            case 4:
-                                textBox14.Text = "W269N-WFGWX-YVC9B-4J6C9-T83GX";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Pro N
-                            case 5:
-                                textBox14.Text = "MH37W-N47XK-V7XM9-C7227-GCQG9";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Pro Edu
-                            case 6:
-                                textBox14.Text = "6TP4R-GNPTD-KYYHQ-7B7DP-J447Y";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Pro Edu N
-                            case 7:
-                                textBox14.Text = "YVWGF-BXNMC-HTQYQ-CPQ99-66QFC";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Pro Workstation
-                            case 8:
-                                textBox14.Text = "YVWGF-BXNMC-HTQYQ-CPQ99-66QFC";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Pro Workstation N
-                            case 9:
-                                textBox14.Text = "NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Edu
-                            case 10:
-                                textBox14.Text = "NW6C2-QMPVW-D7KKK-3GKT6-VCFB2";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Edu N
-                            case 11:
-                                textBox14.Text = "2WH4N-8QGBV-H22JP-CT43Q-MDWWJ";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter
-                            case 12:
-                                textBox14.Text = "NPPR9-FWDCX-D2C8J-H872K-2YT43";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter N
-                            case 13:
-                                textBox14.Text = "DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter G
-                            case 14:
-                                textBox14.Text = "YYVX9-NTFWV-6MDM3-9PT4T-4M68B";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter GN
-                            case 15:
-                                textBox14.Text = "44RPN-FTY23-9VTTB-MP9BX-T84FV";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter LTSB 2015
-                            case 16:
-                                textBox14.Text = "WNMTR-4C88C-JK8YV-HQ7T2-76DF9";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter LTSB 2015 N
-                            case 17:
-                                textBox14.Text = "2F77B-TNFGY-69QQF-B8YKP-D69TJ";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter LTSB 2016
-                            case 18:
-                                textBox14.Text = "DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter LTSB 2016 N
-                            case 19:
-                                textBox14.Text = "QFFDN-GRT3P-VKWWX-X7T3R-8B639";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter LTSC 2019
-                            case 20:
-                                textBox14.Text = "M7XTQ-FN8P6-TTKYV-9D4CC-J462D";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter LTSC 2019 N
-                            case 21:
-                                textBox14.Text = "92NFX-8DJQP-P6BBQ-THF9C-7CG2H";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Enter for Virtual Desktops
-                            case 22:
-                                textBox14.Text = "CPWHC-NT2C7-VYW78-DHDB2-PG3GK";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Remote Server
-                            case 23:
-                                textBox14.Text = "7NBT4-WGBQX-MP4H7-QXFF8-YP3KX";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 10 Lean
-                            case 24:
-                                textBox14.Text = "NBTWJ-3DR69-3C4V8-C26MC-GQ9M6";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-
-
-                            //Windows 8.1 Core (Home)
-                            case 25:
-                                textBox14.Text = "M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Core N (Home N)
-                            case 26:
-                                textBox14.Text = "7B9N3-D94CG-YTVHR-QBPX3-RJP64";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Core SL
-                            case 27:
-                                textBox14.Text = "BB6NG-PQ82V-VRDPW-8XVD2-V8P66";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Core China
-                            case 28:
-                                textBox14.Text = "NCTT7-2RGK8-WMHRF-RY7YQ-JTXG3";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Core ARM
-                            case 29:
-                                textBox14.Text = "XYTND-K6QKT-K2MRH-66RTM-43JKP";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Pro
-                            case 30:
-                                textBox14.Text = "GCRJD-8NW9H-F2CDX-CCM8D-9D6T9";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Pro N
-                            case 31:
-                                textBox14.Text = "HMCNV-VVBFX-7HMBH-CTY9B-B4FXY";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Pro with Media Center
-                            case 32:
-                                textBox14.Text = "789NJ-TQK6T-6XTH8-J39CJ-J8D3P";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Enter
-                            case 33:
-                                textBox14.Text = "MHF9N-XY6XB-WVXMC-BTDCT-MKKG7";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Enter N
-                            case 34:
-                                textBox14.Text = "TT4HM-HN7YT-62K67-RGRQJ-JFFXW";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Embedded Industry Pro
-                            case 35:
-                                textBox14.Text = "NMMPB-38DD4-R2823-62W8D-VXKJB";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Embedded Industry Enterprise
-                            case 36:
-                                textBox14.Text = "FNFKF-PWTVT-9RC8H-32HB2-JB34X";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Embedded Industry Automotive
-                            case 37:
-                                textBox14.Text = "VHXM3-NR6FT-RY6RT-CK882-KW2CJ";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 with Bing N
-                            case 38:
-                                textBox14.Text = "Q6HTR-N24GM-PMJFP-69CD8-2GXKR";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 with Bing SL
-                            case 39:
-                                textBox14.Text = "KF37N-VDV38-GRRTV-XH8X6-6F3BB";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 with Bing China
-                            case 40:
-                                textBox14.Text = "R962J-37N87-9VVK2-WJ74P-XTMHR";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Pro for Students
-                            case 41:
-                                textBox14.Text = "MX3RK-9HNGX-K3QKC-6PJ3F-W8D7B";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8.1 Pro for Students N
-                            case 42:
-                                textBox14.Text = "TNFGH-2R6PB-8XM3K-QYHX2-J4296";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-
-
-                            //Windows 8 Core
-                            case 43:
-                                textBox14.Text = "BN3D2-R7TKB-3YPBD-8DRP2-27GG4";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Core N
-                            case 44:
-                                textBox14.Text = "8N2M2-HWPGY-7PGT9-HGDD8-GVGGY";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Core SL
-                            case 45:
-                                textBox14.Text = "2WN2H-YGCQR-KFX6K-CD6TF-84YXQ";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Core China
-                            case 46:
-                                textBox14.Text = "4K36P-JN4VD-GDC6V-KDT89-DYFKP";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Core ARM
-                            case 47:
-                                textBox14.Text = "DXHJF-N9KQX-MFPVR-GHGQK-Y7RKV";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Pro
-                            case 48:
-                                textBox14.Text = "NG4HW-VH26C-733KW-K6F98-J8CK4";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Pro N
-                            case 49:
-                                textBox14.Text = "XCVCF-2NXM9-723PB-MHCB7-2RYQQ";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Pro with Media Center
-                            case 50:
-                                textBox14.Text = "GNBB8-YVD74-QJHX6-27H4K-8QHDG";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Pro Enter
-                            case 51:
-                                textBox14.Text = "32JNW-9KQ84-P47T8-D8GGY-CWCK7";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Pro Enter N
-                            case 52:
-                                textBox14.Text = "JMNMF-RHW7P-DMY6X-RF3DR-X2BQT";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Embedded Industry Pro
-                            case 53:
-                                textBox14.Text = "RYXVT-BNQG7-VD29F-DBMRY-HT73M";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 8 Embedded Industry Enter
-                            case 54:
-                                textBox14.Text = "NKB3R-R2F8T-3XCDP-7Q2KW-XWYQ2";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-
-
-                            //Windows 7 Pro
-                            case 55:
-                                textBox14.Text = "FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 7 Pro N
-                            case 56:
-                                textBox14.Text = "MRPKT-YTG23-K7D7T-X2JMM-QY7MG";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 7 Pro E
-                            case 57:
-                                textBox14.Text = "W82YF-2Q76Y-63HXB-FGJG9-GF7QX";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 7 Enter
-                            case 58:
-                                textBox14.Text = "33PXH-7Y6KF-2VJC9-XBBR8-HVTHH";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 7 Enter N
-                            case 59:
-                                textBox14.Text = "YDRBP-3D83W-TY26F-D46B2-XCKRJ";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 7 Enter E
-                            case 60:
-                                textBox14.Text = "C29WB-22CC8-VJ326-GHFJW-H9DH4";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 7 Embedded POSReady 7
-                            case 61:
-                                textBox14.Text = "YBYF6-BHCR3-JPKRB-CDW7B-F9BK4";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 7 Embedded Standard
-                            case 62:
-                                textBox14.Text = "XGY72-BRBBT-FF8MH-2GG8H-W7KCW";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                            //Windows 7 Embedded ThinPC
-                            case 63:
-                                textBox14.Text = "73KQT-CD9G6-K7TQG-66MRP-CQ22C";
-                                textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
-                                break;
-                        }
+                        MessageBox.Show("Please type the KMS Server or chosse other chose");
+                        return;
                     }
+                    else
+                    {
+                        KMSSV = textBox13.Text;
+                    }
+                    switch (comboBox1.SelectedIndex)
+                    {
+                        //Windows 10 Home
+                        case 0:
+                            textBox14.Text = "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Home N
+                        case 1:
+                            textBox14.Text = "3KHY7-WNT83-DGQKR-F7HPR-844BM";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Home SL
+                        case 2:
+                            textBox14.Text = "7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Home China
+                        case 3:
+                            textBox14.Text = "PVMJN-6DFY6-9CCP6-7BKTT-D3WVR";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Pro
+                        case 4:
+                            textBox14.Text = "W269N-WFGWX-YVC9B-4J6C9-T83GX";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Pro N
+                        case 5:
+                            textBox14.Text = "MH37W-N47XK-V7XM9-C7227-GCQG9";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Pro Edu
+                        case 6:
+                            textBox14.Text = "6TP4R-GNPTD-KYYHQ-7B7DP-J447Y";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Pro Edu N
+                        case 7:
+                            textBox14.Text = "YVWGF-BXNMC-HTQYQ-CPQ99-66QFC";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Pro Workstation
+                        case 8:
+                            textBox14.Text = "YVWGF-BXNMC-HTQYQ-CPQ99-66QFC";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Pro Workstation N
+                        case 9:
+                            textBox14.Text = "NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Edu
+                        case 10:
+                            textBox14.Text = "NW6C2-QMPVW-D7KKK-3GKT6-VCFB2";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Edu N
+                        case 11:
+                            textBox14.Text = "2WH4N-8QGBV-H22JP-CT43Q-MDWWJ";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter
+                        case 12:
+                            textBox14.Text = "NPPR9-FWDCX-D2C8J-H872K-2YT43";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter N
+                        case 13:
+                            textBox14.Text = "DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter G
+                        case 14:
+                            textBox14.Text = "YYVX9-NTFWV-6MDM3-9PT4T-4M68B";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter GN
+                        case 15:
+                            textBox14.Text = "44RPN-FTY23-9VTTB-MP9BX-T84FV";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter LTSB 2015
+                        case 16:
+                            textBox14.Text = "WNMTR-4C88C-JK8YV-HQ7T2-76DF9";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter LTSB 2015 N
+                        case 17:
+                            textBox14.Text = "2F77B-TNFGY-69QQF-B8YKP-D69TJ";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter LTSB 2016
+                        case 18:
+                            textBox14.Text = "DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter LTSB 2016 N
+                        case 19:
+                            textBox14.Text = "QFFDN-GRT3P-VKWWX-X7T3R-8B639";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter LTSC 2019
+                        case 20:
+                            textBox14.Text = "M7XTQ-FN8P6-TTKYV-9D4CC-J462D";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter LTSC 2019 N
+                        case 21:
+                            textBox14.Text = "92NFX-8DJQP-P6BBQ-THF9C-7CG2H";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Enter for Virtual Desktops
+                        case 22:
+                            textBox14.Text = "CPWHC-NT2C7-VYW78-DHDB2-PG3GK";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Remote Server
+                        case 23:
+                            textBox14.Text = "7NBT4-WGBQX-MP4H7-QXFF8-YP3KX";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 10 Lean
+                        case 24:
+                            textBox14.Text = "NBTWJ-3DR69-3C4V8-C26MC-GQ9M6";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+
+
+                        //Windows 8.1 Core (Home)
+                        case 25:
+                            textBox14.Text = "M9Q9P-WNJJT-6PXPY-DWX8H-6XWKK";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Core N (Home N)
+                        case 26:
+                            textBox14.Text = "7B9N3-D94CG-YTVHR-QBPX3-RJP64";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Core SL
+                        case 27:
+                            textBox14.Text = "BB6NG-PQ82V-VRDPW-8XVD2-V8P66";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Core China
+                        case 28:
+                            textBox14.Text = "NCTT7-2RGK8-WMHRF-RY7YQ-JTXG3";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Core ARM
+                        case 29:
+                            textBox14.Text = "XYTND-K6QKT-K2MRH-66RTM-43JKP";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Pro
+                        case 30:
+                            textBox14.Text = "GCRJD-8NW9H-F2CDX-CCM8D-9D6T9";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Pro N
+                        case 31:
+                            textBox14.Text = "HMCNV-VVBFX-7HMBH-CTY9B-B4FXY";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Pro with Media Center
+                        case 32:
+                            textBox14.Text = "789NJ-TQK6T-6XTH8-J39CJ-J8D3P";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Enter
+                        case 33:
+                            textBox14.Text = "MHF9N-XY6XB-WVXMC-BTDCT-MKKG7";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Enter N
+                        case 34:
+                            textBox14.Text = "TT4HM-HN7YT-62K67-RGRQJ-JFFXW";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Embedded Industry Pro
+                        case 35:
+                            textBox14.Text = "NMMPB-38DD4-R2823-62W8D-VXKJB";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Embedded Industry Enterprise
+                        case 36:
+                            textBox14.Text = "FNFKF-PWTVT-9RC8H-32HB2-JB34X";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Embedded Industry Automotive
+                        case 37:
+                            textBox14.Text = "VHXM3-NR6FT-RY6RT-CK882-KW2CJ";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 with Bing N
+                        case 38:
+                            textBox14.Text = "Q6HTR-N24GM-PMJFP-69CD8-2GXKR";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 with Bing SL
+                        case 39:
+                            textBox14.Text = "KF37N-VDV38-GRRTV-XH8X6-6F3BB";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 with Bing China
+                        case 40:
+                            textBox14.Text = "R962J-37N87-9VVK2-WJ74P-XTMHR";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Pro for Students
+                        case 41:
+                            textBox14.Text = "MX3RK-9HNGX-K3QKC-6PJ3F-W8D7B";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8.1 Pro for Students N
+                        case 42:
+                            textBox14.Text = "TNFGH-2R6PB-8XM3K-QYHX2-J4296";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+
+
+                        //Windows 8 Core
+                        case 43:
+                            textBox14.Text = "BN3D2-R7TKB-3YPBD-8DRP2-27GG4";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Core N
+                        case 44:
+                            textBox14.Text = "8N2M2-HWPGY-7PGT9-HGDD8-GVGGY";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Core SL
+                        case 45:
+                            textBox14.Text = "2WN2H-YGCQR-KFX6K-CD6TF-84YXQ";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Core China
+                        case 46:
+                            textBox14.Text = "4K36P-JN4VD-GDC6V-KDT89-DYFKP";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Core ARM
+                        case 47:
+                            textBox14.Text = "DXHJF-N9KQX-MFPVR-GHGQK-Y7RKV";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Pro
+                        case 48:
+                            textBox14.Text = "NG4HW-VH26C-733KW-K6F98-J8CK4";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Pro N
+                        case 49:
+                            textBox14.Text = "XCVCF-2NXM9-723PB-MHCB7-2RYQQ";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Pro with Media Center
+                        case 50:
+                            textBox14.Text = "GNBB8-YVD74-QJHX6-27H4K-8QHDG";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Pro Enter
+                        case 51:
+                            textBox14.Text = "32JNW-9KQ84-P47T8-D8GGY-CWCK7";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Pro Enter N
+                        case 52:
+                            textBox14.Text = "JMNMF-RHW7P-DMY6X-RF3DR-X2BQT";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Embedded Industry Pro
+                        case 53:
+                            textBox14.Text = "RYXVT-BNQG7-VD29F-DBMRY-HT73M";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 8 Embedded Industry Enter
+                        case 54:
+                            textBox14.Text = "NKB3R-R2F8T-3XCDP-7Q2KW-XWYQ2";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+
+
+                        //Windows 7 Pro
+                        case 55:
+                            textBox14.Text = "FJ82H-XT6CR-J8D7P-XQJJ2-GPDD4";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 7 Pro N
+                        case 56:
+                            textBox14.Text = "MRPKT-YTG23-K7D7T-X2JMM-QY7MG";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 7 Pro E
+                        case 57:
+                            textBox14.Text = "W82YF-2Q76Y-63HXB-FGJG9-GF7QX";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 7 Enter
+                        case 58:
+                            textBox14.Text = "33PXH-7Y6KF-2VJC9-XBBR8-HVTHH";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 7 Enter N
+                        case 59:
+                            textBox14.Text = "YDRBP-3D83W-TY26F-D46B2-XCKRJ";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 7 Enter E
+                        case 60:
+                            textBox14.Text = "C29WB-22CC8-VJ326-GHFJW-H9DH4";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 7 Embedded POSReady 7
+                        case 61:
+                            textBox14.Text = "YBYF6-BHCR3-JPKRB-CDW7B-F9BK4";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 7 Embedded Standard
+                        case 62:
+                            textBox14.Text = "XGY72-BRBBT-FF8MH-2GG8H-W7KCW";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                        //Windows 7 Embedded ThinPC
+                        case 63:
+                            textBox14.Text = "73KQT-CD9G6-K7TQG-66MRP-CQ22C";
+                            textBox15.Text = "cscript //nologo %windir%\\system32\\slmgr.vbs /ipk" + textBox14.Text + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /skms " + KMSSV + "\r\ncscript //nologo %windir%\\system32\\slmgr.vbs /ato";
+                            break;
+                    }
+                }
+            }
                     //Server
                     if (radioButton12.Checked)
                     {
@@ -1622,7 +1623,7 @@ namespace WindowsFormsApplication1
 
                         }
                     }
-                }
+                
             }
 
         private void button15_Click(object sender, EventArgs e)
