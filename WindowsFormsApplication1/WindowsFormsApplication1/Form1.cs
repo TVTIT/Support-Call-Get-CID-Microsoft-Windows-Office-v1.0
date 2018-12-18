@@ -1593,209 +1593,570 @@ namespace WindowsFormsApplication1
                     }
                 }
             }
-                    //Server
-                    if (radioButton12.Checked)
+            //Server
+            if (radioButton12.Checked)
+            {
+                //KMS Ssrver: kms.digiboy.ir
+                if (radioButton9.Checked)
+                {
+                    KMSSV = "kms.digiboy.ir";
+                    switch (comboBox2.SelectedIndex)
                     {
-                        //KMS Ssrver: kms.digiboy.ir
-                        if (radioButton9.Checked)
-                        {
-                            KMSSV = "kms.digiboy.ir";
-                            switch (comboBox2.SelectedIndex)
-                            {
-                                case -1:
-                                    MessageBox.Show("Please choose a version", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    return;
-                                //Server 2019 Standard
-                                case 0:
-                                    AddKeyWin("N69G4-B89J2-4G8F4-WWYCC-J464C", KMSSV);
-                                    break;
-                                //Server 2019 datacenter
-                                case 1:
-                                    AddKeyWin("WMDGN-G9PQG-XVVXX-R3X43-63DFG", KMSSV);
-                                    break;
-                                //Server 2019 Essential
-                                case 2:
-                                    AddKeyWin("WVDHN-86M7X-466P6-VHXV7-YY726", KMSSV);
-                                    break;
-                                //Server 2019 Essential
-                                case 3:
-                                    AddKeyWin("WVDHN-86M7X-466P6-VHXV7-YY726", KMSSV);
-                                    break;
-                                //Server 2019 Azure core
-                                case 4:
-                                    AddKeyWin("FDNH6-VW9RW-BXPJ7-4XTYG-239TB", KMSSV);
-                                    break;
-                                 //sv 2019 stan acor
-                                case 5:
-                                    AddKeyWin("N2KJX-J94YW-TQVFB-DG9YT-724CC", KMSSV);
-                                    break;
-                                //sv 2019 data acor
-                                case 6:
-                                    AddKeyWin("6NMRW-2C8FM-D24W7-TQWMY-CWH2D", KMSSV);
-                                    break;
-                                //arm64
-                                case 7:
-                                    AddKeyWin("GRFBW-QNDC4-6QBHG-CCK3B-2PR88", KMSSV);
-                                    break;
-
-
-                                //sv 2016
-                                //stan
-                                case 8:
-                                    AddKeyWin("WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY", KMSSV);
-                                    break;
-                                //data
-                                case 9:
-                                    AddKeyWin("CB7KF-BWN84-R7R2Y-793K2-8XDDG", KMSSV);
-                                    break;
-                                //essen
-                                case 10:
-                                    AddKeyWin("JCKRF-N37P4-C2D82-9YXRT-4M63B", KMSSV);
-                                    break;
-                                //cloud storage
-                                case 11:
-                                    AddKeyWin("QN4C6-GBJD2-FB422-GHWJK-GJG2R", KMSSV);
-                                    break;
-                                //azure core
-                                case 12:
-                                    AddKeyWin("VP34G-4NPPG-79JTQ-864T4-R3MQX", KMSSV);
-                                    break;
-                                 //stan acor
-                                case 13:
-                                    AddKeyWin("PTXN8-JFHJM-4WC78-MPCBR-9W4KR", KMSSV);
-                                    break;
-                                //data acor
-                                case 14:
-                                    AddKeyWin("2HXDN-KRXHB-GPYC7-YCKFJ-7FVDG", KMSSV);
-                                    break;
-                                //arm64
-                                case 15:
-                                    AddKeyWin("K9FYF-G6NCK-73M32-XMVPY-F9DRR", KMSSV);
-                                    break;
-
-
-                                //sv 2012 r2
-                                //stan
-                                case 16:
-                                    AddKeyWin("D2N9P-3P6X9-2R39C-7RTCD-MDVJX", KMSSV);
-                                    break;
-                                //data
-                                case 17:
-                                    AddKeyWin("W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9", KMSSV);
-                                    break;
-                                //essen
-                                case 18:
-                                    AddKeyWin("KNC87-3J2TX-XB4WP-VCPJV-M4FWM", KMSSV);
-                                    break;
-                                //cloud storage
-                                case 19:
-                                    AddKeyWin("3NPTF-33KPT-GGBPR-YX76B-39KDD", KMSSV);
-                                    break;
-
-
-                                //sv 2013
-                                //stan
-                                case 20:
-                                    AddKeyWin("XC9B7-NBPP2-83J2H-RHMBY-92BT4", KMSSV);
-                                    break;
-                                //data
-                                case 21:
-                                    AddKeyWin("48HP8-DN98B-MYWDG-T2DCC-8W83P", KMSSV);
-                                    break;
-                                //Multipoint stan
-                                case 22:
-                                    AddKeyWin("HM7DN-YVMH3-46JC3-XYTG7-CYQJJ", KMSSV);
-                                    break;
-                                //multipoint pre
-                                case 23:
-                                    AddKeyWin("XNH6W-2V9GX-RGJ4K-Y8X6F-QGJ2G", KMSSV);
-                                    break;
-
-
-                                //sv 2008 r2
-                                //web
-                                case 24:
-                                    AddKeyWin("6TPJF-RBVHG-WBW2R-86QPH-6RTM4", KMSSV);
-                                    break;
-                                //hpc
-                                case 25:
-                                    AddKeyWin("TT8MH-CG224-D3D7Q-498W2-9QCTX", KMSSV);
-                                    break;
-                                //stan
-                                case 26:
-                                    AddKeyWin("YC6KT-GKW9T-YTKYR-T4X34-R7VHC", KMSSV);
-                                    break;
-                                //data
-                                case 27:
-                                    AddKeyWin("74YFP-3QFB3-KQT8W-PMXWJ-7M648", KMSSV);
-                                    break;
-                                //enter
-                                case 28:
-                                    AddKeyWin("489J6-VHDMP-X63PK-3K798-CPX3Y", KMSSV);
-                                    break;
-                                //itanium
-                                case 29:
-                                    AddKeyWin("GT63C-RJFQ3-4GMB6-BRFB9-CB83V", KMSSV);
-                                    break;
-                                 //multi point sv
-                                case 30:
-                                    AddKeyWin("736RG-XDKJK-V34PF-BHK87-J6X3K", KMSSV);
-                                    break;
-
-
-                                //sv2008
-                                //web
-                                case 31:
-                                    AddKeyWin("WYR28-R7TFJ-3X2YQ-YCY4H-M249D", KMSSV);
-                                    break;
-                                //stan
-                                case 32:
-                                    AddKeyWin("TM24T-X9RMF-VWXK6-X8JC9-BFGM2", KMSSV);
-                                    break;
-                                //stan without hyper-v
-                                case 33:
-                                    AddKeyWin("W7VD6-7JFBR-RX26B-YKQ3Y-6FFFJ", KMSSV);
-                                    break;
-                                //enter
-                                case 34:
-                                    AddKeyWin("YQGMW-MPWTJ-34KDK-48M3W-X4Q6V", KMSSV);
-                                    break;
-                                //enter without hyper-v
-                                case 35:
-                                    AddKeyWin("39BXF-X8Q23-P2WWT-38T2F-G3FPG", KMSSV);
-                                    break;
-                                //hpc
-                                case 36:
-                                    AddKeyWin("RCTX3-KWVHP-BR6TB-RB6DM-6X7HP", KMSSV);
-                                    break;
-                                //data
-                                case 37:
-                                    AddKeyWin("7M67G-PC374-GR742-YH8V4-TCBY3", KMSSV);
-                                    break;
-                                //data without hyper-v
-                                case 38:
-                                    AddKeyWin("22XQ2-VRXRG-P8D42-K34TD-G3QQC", KMSSV);
-                                    break;
-                                //for Itanium-Based Systems
-                                case 39:
-                                    AddKeyWin("4DWFP-JF3DJ-B7DTH-78FJB-PDRHK", KMSSV);
-                                    break;
-                            }
-                        }
-                        //KMS Server: kms.loto.cc
-                        if (radioButton10.Checked)
-                        {
-                            KMSSV = "kms.loto.cc";
-                        }
-                        //KMS Server: Custom
-                        if (textBox13.Text.Length == 0)
-                        {
-                            MessageBox.Show("Please type the KMS Server or chosse other option", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        case -1:
+                            MessageBox.Show("Please choose a version", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             return;
-                        }
-                        else
+                        //Server 2019 Standard
+                        case 0:
+                            AddKeyWin("N69G4-B89J2-4G8F4-WWYCC-J464C", KMSSV);
+                            break;
+                        //Server 2019 datacenter
+                        case 1:
+                            AddKeyWin("WMDGN-G9PQG-XVVXX-R3X43-63DFG", KMSSV);
+                            break;
+                        //Server 2019 Essential
+                        case 2:
+                            AddKeyWin("WVDHN-86M7X-466P6-VHXV7-YY726", KMSSV);
+                            break;
+                        //Server 2019 Essential
+                        case 3:
+                            AddKeyWin("WVDHN-86M7X-466P6-VHXV7-YY726", KMSSV);
+                            break;
+                        //Server 2019 Azure core
+                        case 4:
+                            AddKeyWin("FDNH6-VW9RW-BXPJ7-4XTYG-239TB", KMSSV);
+                            break;
+                        //sv 2019 stan acor
+                        case 5:
+                            AddKeyWin("N2KJX-J94YW-TQVFB-DG9YT-724CC", KMSSV);
+                            break;
+                        //sv 2019 data acor
+                        case 6:
+                            AddKeyWin("6NMRW-2C8FM-D24W7-TQWMY-CWH2D", KMSSV);
+                            break;
+                        //arm64
+                        case 7:
+                            AddKeyWin("GRFBW-QNDC4-6QBHG-CCK3B-2PR88", KMSSV);
+                            break;
+
+
+                        //sv 2016
+                        //stan
+                        case 8:
+                            AddKeyWin("WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY", KMSSV);
+                            break;
+                        //data
+                        case 9:
+                            AddKeyWin("CB7KF-BWN84-R7R2Y-793K2-8XDDG", KMSSV);
+                            break;
+                        //essen
+                        case 10:
+                            AddKeyWin("JCKRF-N37P4-C2D82-9YXRT-4M63B", KMSSV);
+                            break;
+                        //cloud storage
+                        case 11:
+                            AddKeyWin("QN4C6-GBJD2-FB422-GHWJK-GJG2R", KMSSV);
+                            break;
+                        //azure core
+                        case 12:
+                            AddKeyWin("VP34G-4NPPG-79JTQ-864T4-R3MQX", KMSSV);
+                            break;
+                        //stan acor
+                        case 13:
+                            AddKeyWin("PTXN8-JFHJM-4WC78-MPCBR-9W4KR", KMSSV);
+                            break;
+                        //data acor
+                        case 14:
+                            AddKeyWin("2HXDN-KRXHB-GPYC7-YCKFJ-7FVDG", KMSSV);
+                            break;
+                        //arm64
+                        case 15:
+                            AddKeyWin("K9FYF-G6NCK-73M32-XMVPY-F9DRR", KMSSV);
+                            break;
+
+
+                        //sv 2012 r2
+                        //stan
+                        case 16:
+                            AddKeyWin("D2N9P-3P6X9-2R39C-7RTCD-MDVJX", KMSSV);
+                            break;
+                        //data
+                        case 17:
+                            AddKeyWin("W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9", KMSSV);
+                            break;
+                        //essen
+                        case 18:
+                            AddKeyWin("KNC87-3J2TX-XB4WP-VCPJV-M4FWM", KMSSV);
+                            break;
+                        //cloud storage
+                        case 19:
+                            AddKeyWin("3NPTF-33KPT-GGBPR-YX76B-39KDD", KMSSV);
+                            break;
+
+
+                        //sv 2013
+                        //stan
+                        case 20:
+                            AddKeyWin("XC9B7-NBPP2-83J2H-RHMBY-92BT4", KMSSV);
+                            break;
+                        //data
+                        case 21:
+                            AddKeyWin("48HP8-DN98B-MYWDG-T2DCC-8W83P", KMSSV);
+                            break;
+                        //Multipoint stan
+                        case 22:
+                            AddKeyWin("HM7DN-YVMH3-46JC3-XYTG7-CYQJJ", KMSSV);
+                            break;
+                        //multipoint pre
+                        case 23:
+                            AddKeyWin("XNH6W-2V9GX-RGJ4K-Y8X6F-QGJ2G", KMSSV);
+                            break;
+
+
+                        //sv 2008 r2
+                        //web
+                        case 24:
+                            AddKeyWin("6TPJF-RBVHG-WBW2R-86QPH-6RTM4", KMSSV);
+                            break;
+                        //hpc
+                        case 25:
+                            AddKeyWin("TT8MH-CG224-D3D7Q-498W2-9QCTX", KMSSV);
+                            break;
+                        //stan
+                        case 26:
+                            AddKeyWin("YC6KT-GKW9T-YTKYR-T4X34-R7VHC", KMSSV);
+                            break;
+                        //data
+                        case 27:
+                            AddKeyWin("74YFP-3QFB3-KQT8W-PMXWJ-7M648", KMSSV);
+                            break;
+                        //enter
+                        case 28:
+                            AddKeyWin("489J6-VHDMP-X63PK-3K798-CPX3Y", KMSSV);
+                            break;
+                        //itanium
+                        case 29:
+                            AddKeyWin("GT63C-RJFQ3-4GMB6-BRFB9-CB83V", KMSSV);
+                            break;
+                        //multi point sv
+                        case 30:
+                            AddKeyWin("736RG-XDKJK-V34PF-BHK87-J6X3K", KMSSV);
+                            break;
+
+
+                        //sv2008
+                        //web
+                        case 31:
+                            AddKeyWin("WYR28-R7TFJ-3X2YQ-YCY4H-M249D", KMSSV);
+                            break;
+                        //stan
+                        case 32:
+                            AddKeyWin("TM24T-X9RMF-VWXK6-X8JC9-BFGM2", KMSSV);
+                            break;
+                        //stan without hyper-v
+                        case 33:
+                            AddKeyWin("W7VD6-7JFBR-RX26B-YKQ3Y-6FFFJ", KMSSV);
+                            break;
+                        //enter
+                        case 34:
+                            AddKeyWin("YQGMW-MPWTJ-34KDK-48M3W-X4Q6V", KMSSV);
+                            break;
+                        //enter without hyper-v
+                        case 35:
+                            AddKeyWin("39BXF-X8Q23-P2WWT-38T2F-G3FPG", KMSSV);
+                            break;
+                        //hpc
+                        case 36:
+                            AddKeyWin("RCTX3-KWVHP-BR6TB-RB6DM-6X7HP", KMSSV);
+                            break;
+                        //data
+                        case 37:
+                            AddKeyWin("7M67G-PC374-GR742-YH8V4-TCBY3", KMSSV);
+                            break;
+                        //data without hyper-v
+                        case 38:
+                            AddKeyWin("22XQ2-VRXRG-P8D42-K34TD-G3QQC", KMSSV);
+                            break;
+                        //for Itanium-Based Systems
+                        case 39:
+                            AddKeyWin("4DWFP-JF3DJ-B7DTH-78FJB-PDRHK", KMSSV);
+                            break;
+                    }
+                }
+                //KMS Server: kms.loto.cc
+                if (radioButton10.Checked)
+                {
+                    KMSSV = "kms.loto.cc";
+                    switch (comboBox2.SelectedIndex)
+                    {
+                        case -1:
+                            MessageBox.Show("Please choose a version", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        //Server 2019 Standard
+                        case 0:
+                            AddKeyWin("N69G4-B89J2-4G8F4-WWYCC-J464C", KMSSV);
+                            break;
+                        //Server 2019 datacenter
+                        case 1:
+                            AddKeyWin("WMDGN-G9PQG-XVVXX-R3X43-63DFG", KMSSV);
+                            break;
+                        //Server 2019 Essential
+                        case 2:
+                            AddKeyWin("WVDHN-86M7X-466P6-VHXV7-YY726", KMSSV);
+                            break;
+                        //Server 2019 Essential
+                        case 3:
+                            AddKeyWin("WVDHN-86M7X-466P6-VHXV7-YY726", KMSSV);
+                            break;
+                        //Server 2019 Azure core
+                        case 4:
+                            AddKeyWin("FDNH6-VW9RW-BXPJ7-4XTYG-239TB", KMSSV);
+                            break;
+                        //sv 2019 stan acor
+                        case 5:
+                            AddKeyWin("N2KJX-J94YW-TQVFB-DG9YT-724CC", KMSSV);
+                            break;
+                        //sv 2019 data acor
+                        case 6:
+                            AddKeyWin("6NMRW-2C8FM-D24W7-TQWMY-CWH2D", KMSSV);
+                            break;
+                        //arm64
+                        case 7:
+                            AddKeyWin("GRFBW-QNDC4-6QBHG-CCK3B-2PR88", KMSSV);
+                            break;
+
+
+                        //sv 2016
+                        //stan
+                        case 8:
+                            AddKeyWin("WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY", KMSSV);
+                            break;
+                        //data
+                        case 9:
+                            AddKeyWin("CB7KF-BWN84-R7R2Y-793K2-8XDDG", KMSSV);
+                            break;
+                        //essen
+                        case 10:
+                            AddKeyWin("JCKRF-N37P4-C2D82-9YXRT-4M63B", KMSSV);
+                            break;
+                        //cloud storage
+                        case 11:
+                            AddKeyWin("QN4C6-GBJD2-FB422-GHWJK-GJG2R", KMSSV);
+                            break;
+                        //azure core
+                        case 12:
+                            AddKeyWin("VP34G-4NPPG-79JTQ-864T4-R3MQX", KMSSV);
+                            break;
+                        //stan acor
+                        case 13:
+                            AddKeyWin("PTXN8-JFHJM-4WC78-MPCBR-9W4KR", KMSSV);
+                            break;
+                        //data acor
+                        case 14:
+                            AddKeyWin("2HXDN-KRXHB-GPYC7-YCKFJ-7FVDG", KMSSV);
+                            break;
+                        //arm64
+                        case 15:
+                            AddKeyWin("K9FYF-G6NCK-73M32-XMVPY-F9DRR", KMSSV);
+                            break;
+
+
+                        //sv 2012 r2
+                        //stan
+                        case 16:
+                            AddKeyWin("D2N9P-3P6X9-2R39C-7RTCD-MDVJX", KMSSV);
+                            break;
+                        //data
+                        case 17:
+                            AddKeyWin("W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9", KMSSV);
+                            break;
+                        //essen
+                        case 18:
+                            AddKeyWin("KNC87-3J2TX-XB4WP-VCPJV-M4FWM", KMSSV);
+                            break;
+                        //cloud storage
+                        case 19:
+                            AddKeyWin("3NPTF-33KPT-GGBPR-YX76B-39KDD", KMSSV);
+                            break;
+
+
+                        //sv 2013
+                        //stan
+                        case 20:
+                            AddKeyWin("XC9B7-NBPP2-83J2H-RHMBY-92BT4", KMSSV);
+                            break;
+                        //data
+                        case 21:
+                            AddKeyWin("48HP8-DN98B-MYWDG-T2DCC-8W83P", KMSSV);
+                            break;
+                        //Multipoint stan
+                        case 22:
+                            AddKeyWin("HM7DN-YVMH3-46JC3-XYTG7-CYQJJ", KMSSV);
+                            break;
+                        //multipoint pre
+                        case 23:
+                            AddKeyWin("XNH6W-2V9GX-RGJ4K-Y8X6F-QGJ2G", KMSSV);
+                            break;
+
+
+                        //sv 2008 r2
+                        //web
+                        case 24:
+                            AddKeyWin("6TPJF-RBVHG-WBW2R-86QPH-6RTM4", KMSSV);
+                            break;
+                        //hpc
+                        case 25:
+                            AddKeyWin("TT8MH-CG224-D3D7Q-498W2-9QCTX", KMSSV);
+                            break;
+                        //stan
+                        case 26:
+                            AddKeyWin("YC6KT-GKW9T-YTKYR-T4X34-R7VHC", KMSSV);
+                            break;
+                        //data
+                        case 27:
+                            AddKeyWin("74YFP-3QFB3-KQT8W-PMXWJ-7M648", KMSSV);
+                            break;
+                        //enter
+                        case 28:
+                            AddKeyWin("489J6-VHDMP-X63PK-3K798-CPX3Y", KMSSV);
+                            break;
+                        //itanium
+                        case 29:
+                            AddKeyWin("GT63C-RJFQ3-4GMB6-BRFB9-CB83V", KMSSV);
+                            break;
+                        //multi point sv
+                        case 30:
+                            AddKeyWin("736RG-XDKJK-V34PF-BHK87-J6X3K", KMSSV);
+                            break;
+
+
+                        //sv2008
+                        //web
+                        case 31:
+                            AddKeyWin("WYR28-R7TFJ-3X2YQ-YCY4H-M249D", KMSSV);
+                            break;
+                        //stan
+                        case 32:
+                            AddKeyWin("TM24T-X9RMF-VWXK6-X8JC9-BFGM2", KMSSV);
+                            break;
+                        //stan without hyper-v
+                        case 33:
+                            AddKeyWin("W7VD6-7JFBR-RX26B-YKQ3Y-6FFFJ", KMSSV);
+                            break;
+                        //enter
+                        case 34:
+                            AddKeyWin("YQGMW-MPWTJ-34KDK-48M3W-X4Q6V", KMSSV);
+                            break;
+                        //enter without hyper-v
+                        case 35:
+                            AddKeyWin("39BXF-X8Q23-P2WWT-38T2F-G3FPG", KMSSV);
+                            break;
+                        //hpc
+                        case 36:
+                            AddKeyWin("RCTX3-KWVHP-BR6TB-RB6DM-6X7HP", KMSSV);
+                            break;
+                        //data
+                        case 37:
+                            AddKeyWin("7M67G-PC374-GR742-YH8V4-TCBY3", KMSSV);
+                            break;
+                        //data without hyper-v
+                        case 38:
+                            AddKeyWin("22XQ2-VRXRG-P8D42-K34TD-G3QQC", KMSSV);
+                            break;
+                        //for Itanium-Based Systems
+                        case 39:
+                            AddKeyWin("4DWFP-JF3DJ-B7DTH-78FJB-PDRHK", KMSSV);
+                            break;
+
+                    }
+                    //KMS Server: Custom
+                    if (textBox13.Text.Length == 0)
+                    {
+                        MessageBox.Show("Please type the KMS Server or chosse other option", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    else
+                    {
+                        KMSSV = textBox13.Text;
+                        switch (comboBox2.SelectedIndex)
                         {
-                            KMSSV = textBox13.Text;
+                            case -1:
+                                MessageBox.Show("Please choose a version", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            //Server 2019 Standard
+                            case 0:
+                                AddKeyWin("N69G4-B89J2-4G8F4-WWYCC-J464C", KMSSV);
+                                break;
+                            //Server 2019 datacenter
+                            case 1:
+                                AddKeyWin("WMDGN-G9PQG-XVVXX-R3X43-63DFG", KMSSV);
+                                break;
+                            //Server 2019 Essential
+                            case 2:
+                                AddKeyWin("WVDHN-86M7X-466P6-VHXV7-YY726", KMSSV);
+                                break;
+                            //Server 2019 Essential
+                            case 3:
+                                AddKeyWin("WVDHN-86M7X-466P6-VHXV7-YY726", KMSSV);
+                                break;
+                            //Server 2019 Azure core
+                            case 4:
+                                AddKeyWin("FDNH6-VW9RW-BXPJ7-4XTYG-239TB", KMSSV);
+                                break;
+                            //sv 2019 stan acor
+                            case 5:
+                                AddKeyWin("N2KJX-J94YW-TQVFB-DG9YT-724CC", KMSSV);
+                                break;
+                            //sv 2019 data acor
+                            case 6:
+                                AddKeyWin("6NMRW-2C8FM-D24W7-TQWMY-CWH2D", KMSSV);
+                                break;
+                            //arm64
+                            case 7:
+                                AddKeyWin("GRFBW-QNDC4-6QBHG-CCK3B-2PR88", KMSSV);
+                                break;
+
+
+                            //sv 2016
+                            //stan
+                            case 8:
+                                AddKeyWin("WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY", KMSSV);
+                                break;
+                            //data
+                            case 9:
+                                AddKeyWin("CB7KF-BWN84-R7R2Y-793K2-8XDDG", KMSSV);
+                                break;
+                            //essen
+                            case 10:
+                                AddKeyWin("JCKRF-N37P4-C2D82-9YXRT-4M63B", KMSSV);
+                                break;
+                            //cloud storage
+                            case 11:
+                                AddKeyWin("QN4C6-GBJD2-FB422-GHWJK-GJG2R", KMSSV);
+                                break;
+                            //azure core
+                            case 12:
+                                AddKeyWin("VP34G-4NPPG-79JTQ-864T4-R3MQX", KMSSV);
+                                break;
+                            //stan acor
+                            case 13:
+                                AddKeyWin("PTXN8-JFHJM-4WC78-MPCBR-9W4KR", KMSSV);
+                                break;
+                            //data acor
+                            case 14:
+                                AddKeyWin("2HXDN-KRXHB-GPYC7-YCKFJ-7FVDG", KMSSV);
+                                break;
+                            //arm64
+                            case 15:
+                                AddKeyWin("K9FYF-G6NCK-73M32-XMVPY-F9DRR", KMSSV);
+                                break;
+
+
+                            //sv 2012 r2
+                            //stan
+                            case 16:
+                                AddKeyWin("D2N9P-3P6X9-2R39C-7RTCD-MDVJX", KMSSV);
+                                break;
+                            //data
+                            case 17:
+                                AddKeyWin("W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9", KMSSV);
+                                break;
+                            //essen
+                            case 18:
+                                AddKeyWin("KNC87-3J2TX-XB4WP-VCPJV-M4FWM", KMSSV);
+                                break;
+                            //cloud storage
+                            case 19:
+                                AddKeyWin("3NPTF-33KPT-GGBPR-YX76B-39KDD", KMSSV);
+                                break;
+
+
+                            //sv 2013
+                            //stan
+                            case 20:
+                                AddKeyWin("XC9B7-NBPP2-83J2H-RHMBY-92BT4", KMSSV);
+                                break;
+                            //data
+                            case 21:
+                                AddKeyWin("48HP8-DN98B-MYWDG-T2DCC-8W83P", KMSSV);
+                                break;
+                            //Multipoint stan
+                            case 22:
+                                AddKeyWin("HM7DN-YVMH3-46JC3-XYTG7-CYQJJ", KMSSV);
+                                break;
+                            //multipoint pre
+                            case 23:
+                                AddKeyWin("XNH6W-2V9GX-RGJ4K-Y8X6F-QGJ2G", KMSSV);
+                                break;
+
+
+                            //sv 2008 r2
+                            //web
+                            case 24:
+                                AddKeyWin("6TPJF-RBVHG-WBW2R-86QPH-6RTM4", KMSSV);
+                                break;
+                            //hpc
+                            case 25:
+                                AddKeyWin("TT8MH-CG224-D3D7Q-498W2-9QCTX", KMSSV);
+                                break;
+                            //stan
+                            case 26:
+                                AddKeyWin("YC6KT-GKW9T-YTKYR-T4X34-R7VHC", KMSSV);
+                                break;
+                            //data
+                            case 27:
+                                AddKeyWin("74YFP-3QFB3-KQT8W-PMXWJ-7M648", KMSSV);
+                                break;
+                            //enter
+                            case 28:
+                                AddKeyWin("489J6-VHDMP-X63PK-3K798-CPX3Y", KMSSV);
+                                break;
+                            //itanium
+                            case 29:
+                                AddKeyWin("GT63C-RJFQ3-4GMB6-BRFB9-CB83V", KMSSV);
+                                break;
+                            //multi point sv
+                            case 30:
+                                AddKeyWin("736RG-XDKJK-V34PF-BHK87-J6X3K", KMSSV);
+                                break;
+
+
+                            //sv2008
+                            //web
+                            case 31:
+                                AddKeyWin("WYR28-R7TFJ-3X2YQ-YCY4H-M249D", KMSSV);
+                                break;
+                            //stan
+                            case 32:
+                                AddKeyWin("TM24T-X9RMF-VWXK6-X8JC9-BFGM2", KMSSV);
+                                break;
+                            //stan without hyper-v
+                            case 33:
+                                AddKeyWin("W7VD6-7JFBR-RX26B-YKQ3Y-6FFFJ", KMSSV);
+                                break;
+                            //enter
+                            case 34:
+                                AddKeyWin("YQGMW-MPWTJ-34KDK-48M3W-X4Q6V", KMSSV);
+                                break;
+                            //enter without hyper-v
+                            case 35:
+                                AddKeyWin("39BXF-X8Q23-P2WWT-38T2F-G3FPG", KMSSV);
+                                break;
+                            //hpc
+                            case 36:
+                                AddKeyWin("RCTX3-KWVHP-BR6TB-RB6DM-6X7HP", KMSSV);
+                                break;
+                            //data
+                            case 37:
+                                AddKeyWin("7M67G-PC374-GR742-YH8V4-TCBY3", KMSSV);
+                                break;
+                            //data without hyper-v
+                            case 38:
+                                AddKeyWin("22XQ2-VRXRG-P8D42-K34TD-G3QQC", KMSSV);
+                                break;
+                            //for Itanium-Based Systems
+                            case 39:
+                                AddKeyWin("4DWFP-JF3DJ-B7DTH-78FJB-PDRHK", KMSSV);
+                                break;
                         }
                     }
                     //Office
@@ -1822,7 +2183,9 @@ namespace WindowsFormsApplication1
                         MessageBox.Show("Please type the KMS Server or chosse other option", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
+                }
             }
+        }
 
         private void button15_Click(object sender, EventArgs e)
         {
