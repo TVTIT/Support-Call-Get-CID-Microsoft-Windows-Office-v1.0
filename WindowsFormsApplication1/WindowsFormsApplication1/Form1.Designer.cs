@@ -133,6 +133,9 @@
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -144,9 +147,6 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabPage2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -982,7 +982,7 @@
             // 
             this.groupBox9.Controls.Add(this.checkBox2);
             this.groupBox9.Controls.Add(this.checkBox1);
-            this.groupBox9.Location = new System.Drawing.Point(595, 194);
+            this.groupBox9.Location = new System.Drawing.Point(601, 194);
             this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
@@ -1025,7 +1025,7 @@
             this.groupBox8.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox8.Size = new System.Drawing.Size(576, 90);
+            this.groupBox8.Size = new System.Drawing.Size(589, 90);
             this.groupBox8.TabIndex = 10;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Version";
@@ -1033,7 +1033,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(472, 20);
+            this.radioButton1.Location = new System.Drawing.Point(486, 20);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(102, 21);
@@ -1044,7 +1044,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(363, 20);
+            this.radioButton2.Location = new System.Drawing.Point(383, 20);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(102, 21);
@@ -1055,18 +1055,18 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(251, 20);
+            this.radioButton3.Location = new System.Drawing.Point(239, 20);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(102, 21);
+            this.radioButton3.Size = new System.Drawing.Size(138, 21);
             this.radioButton3.TabIndex = 3;
-            this.radioButton3.Text = "Office 2016";
+            this.radioButton3.Text = "Office 2016/2019";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(156, 20);
+            this.radioButton4.Location = new System.Drawing.Point(145, 20);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(85, 21);
@@ -1077,7 +1077,7 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(55, 20);
+            this.radioButton5.Location = new System.Drawing.Point(51, 20);
             this.radioButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(85, 21);
@@ -1336,6 +1336,103 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Version";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Windows 10 Home",
+            "Windows 10 Home N",
+            "Windows 10 Home Single Language",
+            "Windows 10 Home China",
+            "Windows 10 Pro",
+            "Windows 10 Pro N",
+            "Windows 10 Pro Education",
+            "Windows 10 Pro Education N",
+            "Windows 10 Pro Workstation",
+            "Windows 10 Pro Workstation N",
+            "Windows 10 Education",
+            "Windows 10 Education N",
+            "Windows 10 Enterprise",
+            "Windows 10 Enterprise N",
+            "Windows 10 Enterprise G",
+            "Windows 10 Enterprise GN",
+            "Windows 10 Enterprise LTSB 2015",
+            "Windows 10 Enterprise LTSB 2015 N",
+            "Windows 10 Enterprise LTSB 2016",
+            "Windows 10 Enterprise LTSB 2016 N",
+            "Windows 10 Enterprise LTSC 2019 ",
+            "Windows 10 Enterprise LTSC 2019 N",
+            "Windows 10 Enterprise for Virtual Desktop",
+            "Windows 10 Remote Server",
+            "Windows 10 Lean",
+            "Windows 8.1 Home",
+            "Windows 8.1 Home N",
+            "Windows 8.1 Home Single Language",
+            "Windows 8.1 Home China",
+            "Windows 8.1 Home ARM",
+            "Windows 8.1 Pro",
+            "Windows 8.1 Pro N",
+            "Windows 8.1 Pro with Media Center",
+            "Windows 8.1 Enterprise",
+            "Windows 8.1 Enterprise N",
+            "Windows 8.1 Embedded Industry Pro",
+            "Windows 8.1 Embedded Industry Enterprise",
+            "Windows 8.1 Embedded Industry Automotive",
+            "Windows 8.1 with Bing",
+            "Windows 8.1 with Bing N",
+            "Windows 8.1 with Bing Single Language",
+            "Windows 8.1 with Bing China",
+            "Windows 8.1 Pro for Students",
+            "Windows 8.1 Pro for Students N",
+            "Windows 8 Home",
+            "Windows 8 Home N",
+            "Windows 8 Home Single Language",
+            "Windows 8 Home China",
+            "Windows 8 Home ARM",
+            "Windows 8 Pro",
+            "Windows 8 Pro N",
+            "Windows 8 Pro with Media Center",
+            "Windows 8 Enterprise",
+            "Windows 8 Enterprise N",
+            "Windows 8 Embedded Industry Pro",
+            "Windows 8 Embedded Industry Enterprise",
+            "Windows 7 Pro",
+            "Windows 7 Pro N",
+            "Windows 7 Pro E",
+            "Windows 7 Enterprise",
+            "Windows 7 Enterprise N",
+            "Windows 7 Embedded POSReady 7",
+            "Windows 7 Embedded Standard",
+            "Windows 7 Embedded ThinPC"});
+            this.comboBox1.Location = new System.Drawing.Point(6, 67);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(299, 24);
+            this.comboBox1.TabIndex = 8;
+            this.comboBox1.Visible = false;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(184, 157);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(91, 32);
+            this.button15.TabIndex = 7;
+            this.button15.Text = "Clear";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(25, 157);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(91, 32);
+            this.button14.TabIndex = 6;
+            this.button14.Text = "Next";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
             // comboBox3
             // 
             this.comboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -1577,103 +1674,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(469, 286);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(25, 157);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(91, 32);
-            this.button14.TabIndex = 6;
-            this.button14.Text = "Next";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(184, 157);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(91, 32);
-            this.button15.TabIndex = 7;
-            this.button15.Text = "Clear";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Windows 10 Home",
-            "Windows 10 Home N",
-            "Windows 10 Home Single Language",
-            "Windows 10 Home China",
-            "Windows 10 Pro",
-            "Windows 10 Pro N",
-            "Windows 10 Pro Education",
-            "Windows 10 Pro Education N",
-            "Windows 10 Pro Workstation",
-            "Windows 10 Pro Workstation N",
-            "Windows 10 Education",
-            "Windows 10 Education N",
-            "Windows 10 Enterprise",
-            "Windows 10 Enterprise N",
-            "Windows 10 Enterprise G",
-            "Windows 10 Enterprise GN",
-            "Windows 10 Enterprise LTSB 2015",
-            "Windows 10 Enterprise LTSB 2015 N",
-            "Windows 10 Enterprise LTSB 2016",
-            "Windows 10 Enterprise LTSB 2016 N",
-            "Windows 10 Enterprise LTSC 2019 ",
-            "Windows 10 Enterprise LTSC 2019 N",
-            "Windows 10 Enterprise for Virtual Desktop",
-            "Windows 10 Remote Server",
-            "Windows 10 Lean",
-            "Windows 8.1 Home",
-            "Windows 8.1 Home N",
-            "Windows 8.1 Home Single Language",
-            "Windows 8.1 Home China",
-            "Windows 8.1 Home ARM",
-            "Windows 8.1 Pro",
-            "Windows 8.1 Pro N",
-            "Windows 8.1 Pro with Media Center",
-            "Windows 8.1 Enterprise",
-            "Windows 8.1 Enterprise N",
-            "Windows 8.1 Embedded Industry Pro",
-            "Windows 8.1 Embedded Industry Enterprise",
-            "Windows 8.1 Embedded Industry Automotive",
-            "Windows 8.1 with Bing",
-            "Windows 8.1 with Bing N",
-            "Windows 8.1 with Bing Single Language",
-            "Windows 8.1 with Bing China",
-            "Windows 8.1 Pro for Students",
-            "Windows 8.1 Pro for Students N",
-            "Windows 8 Home",
-            "Windows 8 Home N",
-            "Windows 8 Home Single Language",
-            "Windows 8 Home China",
-            "Windows 8 Home ARM",
-            "Windows 8 Pro",
-            "Windows 8 Pro N",
-            "Windows 8 Pro with Media Center",
-            "Windows 8 Enterprise",
-            "Windows 8 Enterprise N",
-            "Windows 8 Embedded Industry Pro",
-            "Windows 8 Embedded Industry Enterprise",
-            "Windows 7 Pro",
-            "Windows 7 Pro N",
-            "Windows 7 Pro E",
-            "Windows 7 Enterprise",
-            "Windows 7 Enterprise N",
-            "Windows 7 Embedded POSReady 7",
-            "Windows 7 Embedded Standard",
-            "Windows 7 Embedded ThinPC"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 67);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(299, 24);
-            this.comboBox1.TabIndex = 8;
-            this.comboBox1.Visible = false;
             // 
             // Form1
             // 
