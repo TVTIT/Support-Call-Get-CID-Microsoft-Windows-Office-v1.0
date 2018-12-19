@@ -14,3 +14,20 @@ C:\Program Files\a\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\W
 C:\Program Files\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
 C:\Program Files\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Program Files\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Program Files (x86)\a\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Program Files (x86)\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Program Files (x86)\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Program Files (x86)\a\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Program Files (x86)\a\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Program Files (x86)\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Program Files (x86)\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Program Files (x86)\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Program Files\a\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Program Files\a\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Program Files\a\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Program Files\a\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Program Files\a\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Program Files\a\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Program Files\a\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Program Files\a\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Program Files\a\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
